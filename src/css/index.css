@@ -1,0 +1,12 @@
+.topnav {
+	display: flex;
+	background: red;
+}
+
+.navbar-brand {
+	font-size: 12pt;
+}
+
+.cent {
+	margin: 0 auto;
+}
