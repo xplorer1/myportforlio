@@ -1,18 +1,11 @@
 import React from 'react';
 import "../css/index.css";
 import {NavComponent} from "./homecomponent"
+import Loader from 'react-loaders'
 
-function Toast() {
-	return (
-		<div class="toast">
-			<div class="toast-header">
-				Toast Header
-			</div>
-			<div class="toast-body">
-				Some text inside the toast body
-			</div>
-		</div>
-	)
+function ShowLoader() {
+	return <div><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" /></div>
+	//
 }
 
 class Converter extends React.Component {
@@ -24,26 +17,12 @@ class Converter extends React.Component {
 			currencyfrom: "NGN",
 			currencyto: "USD",
 			conversionvalue: "",
-			conversionrate: ""
+			conversionrate: "",
+			loading: false
 		}
-
-		//$('.toast').toast('show');
 
 		this.handleInput = this.handleInput.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-
-	handleNotifications() {
-		return (
-			<div class="toast">
-				<div class="toast-header">
-					Toast Header
-				</div>
-				<div class="toast-body">
-					Some text inside the toast body
-				</div>
-			</div>
-		)
 	}
 
 	handleSubmit(e) {
@@ -66,19 +45,24 @@ class Converter extends React.Component {
 			console.log("No currencyto selected!");
 		}
 		else {
-			fetch(proxyUrl + url)
-				.then((response) => {
-					return response.json();
-				})
-				.then((data) => {
-					console.log("data: ", data[query]);
-					this.setState({
-						conversionvalue: (data[query]*this.state.amount),
-						conversionrate: (data[query])
+
+			this.setState({ loading: true }, () => {
+				fetch(proxyUrl + url)
+					.then((response) => {
+						return response.json();
 					})
-				})
-				.catch((error) => {
-					console.log("error: ", error.message);
+					.then((data) => {
+						this.setState({loading: false});
+						console.log("data: ", data[query]);
+
+						this.setState({
+							conversionvalue: (data[query]*this.state.amount),
+							conversionrate: (data[query])
+						})
+					})
+					.catch((error) => {
+						console.log("error: ", error.message);
+					}) 
 				})
 			}
 	};
@@ -444,29 +428,31 @@ class Converter extends React.Component {
 					</div>
 				</div>
 
-				<div className="text-center container-fluid">
+					<div className="text-center container-fluid">
 
-					<div className="mx-auto w-50">
-						<button type="button" className="btn btn-secondary text-white" onClick={this.handleSubmit}>
-							Submit
-						</button>
+						<div className="mx-auto w-50">
+							<button type="button" className="btn btn-secondary text-white" onClick={this.handleSubmit}>
+								Submit
+							</button>
+						</div>
 					</div>
 
-				</div>
+					{this.state.loading ? <ShowLoader /> : 
+					<div>
+						<div className="col mx-auto w-50 rst" style={{paddingTop: "2rem"}}>
+							<span>Convertion rate is: </span>
+							<input value={Number(this.state.conversionrate).toFixed(4) + " per " + this.state.currencyto} type="text" 
+							className="form-control mr-sm-2 mb-5" id="num"
+							name="result" readOnly/>
+						</div>
 
-				<div className="col mx-auto w-50 rst" style={{paddingTop: "2rem"}}>
-					<span>Convertion rate is: </span>
-					<input value={this.state.conversionrate + " per " + this.state.currencyto} type="text" 
-					className="form-control mr-sm-2 mb-5" id="num"
-					name="result" readOnly/>
-				</div>
-
-				<div className="col mx-auto w-50">
-					<span>Convertion value is: </span>
-					<input value={this.state.currencyto + this.state.conversionvalue.toString()} type="text" 
-					className="form-control mr-sm-2 mb-5" id="num"
-					name="result" readOnly/>
-				</div>
+						<div className="col mx-auto w-50">
+							<span>Convertion value is: </span>
+							<input value={this.state.currencyto + Number(this.state.conversionvalue).toFixed(3)} type="text" 
+							className="form-control mr-sm-2 mb-5" id="num"
+							name="result" readOnly/>
+						</div>
+					</div>}
 				</div>
 
 			</section>
