@@ -94,7 +94,7 @@ class Converter extends React.Component {
 			<section className="text-center">
 				<NavComponent />
 
-				<div style={{width: "50%", margin: "0 auto"}}>
+				<div className="cv-bd">
 					<div className="mt-5">
 					<header>How does it work?</header>
 					<div><p>Enter the amount you want to convert into the form.</p></div>
