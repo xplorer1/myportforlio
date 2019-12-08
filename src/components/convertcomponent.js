@@ -23,7 +23,8 @@ class Converter extends React.Component {
 			amount: "",
 			currencyfrom: "NGN",
 			currencyto: "USD",
-			conversionvalue: ""	
+			conversionvalue: "",
+			conversionrate: ""
 		}
 
 		//$('.toast').toast('show');
@@ -55,7 +56,7 @@ class Converter extends React.Component {
 		let url = "https://free.currconv.com/api/v7/convert?q=" + query + "&compact=ultra&apiKey=89af65d6a26d24bf5019";
 
 		if(!this.state.amount) {
-			alert("no amount")
+			alert("Please enter amount.")
 			return this.handleNotifications
 		}
 		else if (!this.state.currencyfrom) {
@@ -71,7 +72,10 @@ class Converter extends React.Component {
 				})
 				.then((data) => {
 					console.log("data: ", data[query]);
-					this.setState({conversionvalue: (data[query]*this.state.amount)})
+					this.setState({
+						conversionvalue: (data[query]*this.state.amount),
+						conversionrate: (data[query])
+					})
 				})
 				.catch((error) => {
 					console.log("error: ", error.message);
@@ -90,8 +94,9 @@ class Converter extends React.Component {
 			<section className="text-center">
 				<NavComponent />
 
-				<div className="mt-5">
-					<header>How does it work</header>
+				<div style={{width: "50%", margin: "0 auto"}}>
+					<div className="mt-5">
+					<header>How does it work?</header>
 					<div><p>Enter the amount you want to convert into the form.</p></div>
 					<div><p>Then select the currencies you want to convert from and to.</p></div>
 					<div><p>Then press convert!</p></div>
@@ -102,12 +107,6 @@ class Converter extends React.Component {
 						<input onChange={this.handleInput} value={this.state.amount} type="number" 
 						className="form-control mr-sm-2 mb-5" id="num"
 						placeholder="Enter amount to convert..." name="amount"/>
-					</div>
-
-					<div className="col mx-auto w-50">
-						<input value={"Value of conversion is: " + this.state.conversionvalue.toString()} type="text" 
-						className="form-control mr-sm-2 mb-5" id="num"
-						name="result" readOnly/>
 					</div>
 
 				</div>
@@ -453,6 +452,21 @@ class Converter extends React.Component {
 						</button>
 					</div>
 
+				</div>
+
+				<div className="col mx-auto w-50 rst" style={{paddingTop: "2rem"}}>
+					<span>Convertion rate is: </span>
+					<input value={this.state.conversionrate + " per " + this.state.currencyto} type="text" 
+					className="form-control mr-sm-2 mb-5" id="num"
+					name="result" readOnly/>
+				</div>
+
+				<div className="col mx-auto w-50">
+					<span>Convertion value is: </span>
+					<input value={this.state.currencyto + this.state.conversionvalue.toString()} type="text" 
+					className="form-control mr-sm-2 mb-5" id="num"
+					name="result" readOnly/>
+				</div>
 				</div>
 
 			</section>
