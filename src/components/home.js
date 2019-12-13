@@ -52,7 +52,7 @@ function StatikCompoonent(argument) {
 						<div className="col-md-10 col-lg-8">
 							<div className="intro">
 								<div className="profile-img">
-									<img src="images/profile-1-250x250.jpg" alt="" /></div>
+									<img src="assets/images/profile-1-250x250.jpg" alt="" /></div>
 								<h2><b>Michel SMith</b></h2>
 								<h4 className="font-yellow">Key Account Manager</h4>
 								<ul className="information margin-tb-30">
@@ -96,52 +96,52 @@ function StatikCompoonent(argument) {
 				<div className="portfolioContainer">
 					
 					<div className="p-item web-design">
-						<a href="images/portfolio-1-600x400.jpg" data-fluidbox>
-							<img src="images/portfolio-1-600x400.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-1-600x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-1-600x400.jpg" alt="" /></a>
 					</div>{/* p-item */}
 					
 					<div className="p-item branding graphic-design">
-						<a href="images/portfolio-7-600x800.jpg" data-fluidbox>
-							<img src="images/portfolio-7-600x800.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-7-600x800.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-7-600x800.jpg" alt="" /></a>
 					</div>{/* p-item */}
 					
 					<div className="p-item web-design">
-						<a href="images/portfolio-2-600x400.jpg" data-fluidbox>
-							<img src="images/portfolio-2-600x400.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-2-600x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-2-600x400.jpg" alt="" /></a>
 					</div>{/* p-item */}
 					
 					<div className="p-item p-item-2 graphic-design">
-						<a className="img" href="images/portfolio-8-300x400.jpg" data-fluidbox>
-							<img src="images/portfolio-8-300x400.jpg" alt="" /></a>
-						<a className="img" href="images/portfolio-9-300x400.jpg" data-fluidbox>
-							<img src="images/portfolio-9-300x400.jpg" alt="" /></a>
+						<a className="img" href="assets/images/portfolio-8-300x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-8-300x400.jpg" alt="" /></a>
+						<a className="img" href="assets/images/portfolio-9-300x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-9-300x400.jpg" alt="" /></a>
 					</div>{/* p-item */}
 					
 					<div className="p-item branding graphic-design">
-						<a href="images/portfolio-3-600x400.jpg" data-fluidbox>
-							<img src="images/portfolio-3-600x400.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-3-600x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-3-600x400.jpg" alt="" /></a>
 					</div>{/* p-item */}
 					
 					<div className="p-item graphic-design web-design">
-						<a href="images/portfolio-4-600x400.jpg" data-fluidbox>
-							<img src="images/portfolio-4-600x400.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-4-600x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-4-600x400.jpg" alt="" /></a>
 					</div>{/* p-item */}
 					
 					<div className="p-item  graphic-design branding">
-						<a href="images/portfolio-5-600x800.jpg" data-fluidbox>
-							<img src="images/portfolio-5-600x800.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-5-600x800.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-5-600x800.jpg" alt="" /></a>
 					</div>{/* p-item */}
 						
 					<div className="p-item web-design branding">
-						<a href="images/portfolio-6-600x800.jpg" data-fluidbox>
-							<img src="images/portfolio-6-600x800.jpg" alt="" /></a>
+						<a href="assets/images/portfolio-6-600x800.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-6-600x800.jpg" alt="" /></a>
 					</div>{/* p-item */}
 
 					<div className="p-item p-item-2 graphic-design">
-						<a className="img" href="images/portfolio-10-300x400.jpg" data-fluidbox>
-							<img src="images/portfolio-10-300x400.jpg" alt="" /></a>
-						<a className="img" href="images/portfolio-11-300x400.jpg" data-fluidbox>
-							<img src="images/portfolio-11-300x400.jpg" alt="" /></a>
+						<a className="img" href="assets/images/portfolio-10-300x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-10-300x400.jpg" alt="" /></a>
+						<a className="img" href="assets/images/portfolio-11-300x400.jpg" data-fluidbox>
+							<img src="assets/images/portfolio-11-300x400.jpg" alt="" /></a>
 					</div>{/* p-item */}
 				
 				</div>{/* portfolioContainer */}
