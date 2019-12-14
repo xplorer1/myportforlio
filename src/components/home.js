@@ -13,8 +13,8 @@ function StatikCompoonent(argument) {
 								<div className="info">
 									<i className="icon ion-ios-location-outline"></i>
 									<div className="right-area">
-										<h5>3008 Sarah Drive</h5>
-										<h5>Franklin,LA 70538</h5>
+										<h5>286 Bornu Way</h5>
+										<h5>Yaba, Lagos</h5>
 									</div>{/* right-area */}
 								</div>{/* info */}
 							</div>{/* col-sm-4 */}
@@ -23,18 +23,18 @@ function StatikCompoonent(argument) {
 								<div className="info">
 									<i className="icon ion-ios-telephone-outline"></i>
 									<div className="right-area">
-										<h5>337-4139538</h5>
-										<h6>MIN - FRI,8AM - 7PM</h6>
+										<h5>+2348103350884</h5>
+										<h6>MON - FRI, 8AM - 9PM</h6>
 									</div>{/* right-area */}
 								</div>{/* info */}
 							</div>{/* col-sm-4 */}
 							
-							<div clasName="col-sm-6 col-md-6 col-lg-4">
+							<div className="col-sm-6 col-md-6 col-lg-4">
 								<div className="info">
 									<i className="icon ion-ios-chatboxes-outline"></i>
 									<div className="right-area">
-										<h5>contact@colorlib.com</h5>
-										<h6>REPLY IN 24 HOURS</h6>
+										<h5>cj.ugwuanyi@gmail.com</h5>
+										<h6>Reply in 24 hours</h6>
 									</div>{/* right-area */}
 								</div>{/* info */}
 							</div>{/* col-sm-4 */}
@@ -52,13 +52,13 @@ function StatikCompoonent(argument) {
 						<div className="col-md-10 col-lg-8">
 							<div className="intro">
 								<div className="profile-img">
-									<img src="assets/images/profile-1-250x250.jpg" alt="" /></div>
-								<h2><b>Michel SMith</b></h2>
-								<h4 className="font-yellow">Key Account Manager</h4>
+									<img src="assets/images/profilemain.jpg" alt="" /></div>
+								<h2><b>Chijioke Ugwuanyi</b></h2>
+								<h4 className="font-yellow">Web Developer</h4>
 								<ul className="information margin-tb-30">
-									<li><b>BORN : </b>August 25, 1987</li>
-									<li><b>EMAIL : </b>mymith@mywebpage.com</li>
-									<li><b>MARITAL STATUS : </b>Married</li>
+									<li><b>BORN : </b>June 30, 1996</li>
+									<li><b>EMAIL : </b>cj.ugwuanyi@gmail.com</li>
+									<li><b>MARITAL STATUS : </b>Single</li>
 								</ul>
 								<ul className="social-icons">
 									<li><a href="#"><i className="ion-social-pinterest"></i></a></li>
@@ -156,9 +156,10 @@ function StatikCompoonent(argument) {
 								<h3><b>About me</b></h3>
 								<h6 className="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
 							</div>
-						</div>{/* col-sm-4 */}
+						</div>
+
 						<div className="col-sm-8">
-							<p className="margin-b-50">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque 
+							<p className="margin-b-50" style={{color: "black"}}>Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque 
 							sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 							Nulla maximus pellentes que velit, quis consequat nulla effi citur at. 
 							Maecenas sed massa tristique.Duis non volutpat arcu, eu mollis tellus. 
