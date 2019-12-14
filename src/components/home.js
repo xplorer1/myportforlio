@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { Progress } from 'react-sweet-progress';
+import "react-sweet-progress/lib/style.css";
 
 function StatikCompoonent(argument) {
 	return (
@@ -171,6 +173,7 @@ function StatikCompoonent(argument) {
 							<div className="row">
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
+										<Progress type="circle" percent={90} status="success" />
 										<div className="radial-progress" data-prog-percent=".97">
 											<div></div>
 											<h6 className="progress-title">HTML5 & CSS3</h6>
@@ -180,24 +183,27 @@ function StatikCompoonent(argument) {
 							
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
+									<Progress type="circle" percent={70} status="success" />
 										<div className="radial-progress" data-prog-percent=".78">
 											<div></div>
-											<h6 className="progress-title">WEB DESIGN</h6>
+											<h6 className="progress-title">ReactJs</h6>
 										</div>
 									</div>{/* radial-prog-area*/}
 								</div>{/* col-sm-6*/}
 								
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
+									<Progress type="circle" percent={70} status="success" />
 										<div className="radial-progress" data-prog-percent=".67">
 											<div></div>
-											<h6 className="progress-title">JAVA</h6>
+											<h6 className="progress-title">NodeJs</h6>
 										</div>
 									</div>{/* radial-prog-area*/}
 								</div>{/* col-sm-6*/}
 								
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-50">
+									<Progress type="circle" percent={50} status="success" />
 										<div className="radial-progress" data-prog-percent=".97">
 											<div></div>
 											<h6 className="progress-title">PHP</h6>
@@ -311,28 +317,28 @@ function StatikCompoonent(argument) {
 					
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="400" data-count="3">0</span></b></h1>
-								<h5 className="desc"><b>Coder Degrees</b></h5>
+								<h1 className="title"><b><span className="counter-value" data-duration="400" data-count="3">3</span></b></h1>
+								<h5 className="desc"><b>Coder Certificates</b></h5>
 							</div>{/* counter */}
 						</div>{/* col-md-3*/}
 						
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="1400" data-count="25">0</span></b></h1>
-								<h5 className="desc"><b>Project Completed</b></h5>
+								<h1 className="title"><b><span className="counter-value" data-duration="1400" data-count="25">16</span></b></h1>
+								<h5 className="desc"><b>Projects Completed</b></h5>
 							</div>{/* counter */}
 						</div>{/* col-md-3*/}
 						
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="700" data-count="311">0</span></b></h1>
+								<h1 className="title"><b><span className="counter-value" data-duration="700" data-count="311">5</span></b></h1>
 								<h5 className="desc"><b>Satisfied Clients</b></h5>
 							</div>{/* counter */}
 						</div>{/* col-md-3*/}
 						
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="2000" data-count="732">0</span></b></h1>
+								<h1 className="title"><b><span className="counter-value" data-duration="2000" data-count="732">13</span></b></h1>
 								<h5 className="desc"><b>Finished Projects</b></h5>
 							</div>
 						</div>
