@@ -43,7 +43,7 @@ class Home extends React.Component {
 						</div>
 					</div>
 					
-					<a className="downlad-btn" href="assets/Resume.docx" download="Chijioke's CV">Download CV</a>
+					<a className="downlad-btn" href="assets/mycv.docx" download="Chijioke's CV">Download CV</a>
 				</div>
 			</header>
 			
