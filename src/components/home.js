@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
 
-function StatikCompoonent(argument) {
-	return (
-
-		<article>
+class Home extends React.Component {
+	render() {
+		return (
+			<article>
 			<header>
 				<div className="container">
 					<div className="heading-wrapper">
@@ -17,9 +17,9 @@ function StatikCompoonent(argument) {
 									<div className="right-area">
 										<h5>286 Bornu Way</h5>
 										<h5>Yaba, Lagos</h5>
-									</div>{/* right-area */}
-								</div>{/* info */}
-							</div>{/* col-sm-4 */}
+									</div>
+								</div>
+							</div>
 							
 							<div className="col-sm-6 col-md-6 col-lg-4">
 								<div className="info">
@@ -27,9 +27,9 @@ function StatikCompoonent(argument) {
 									<div className="right-area">
 										<h5>+2348103350884</h5>
 										<h6>MON - FRI, 8AM - 9PM</h6>
-									</div>{/* right-area */}
-								</div>{/* info */}
-							</div>{/* col-sm-4 */}
+									</div>
+								</div>
+							</div>
 							
 							<div className="col-sm-6 col-md-6 col-lg-4">
 								<div className="info">
@@ -37,14 +37,14 @@ function StatikCompoonent(argument) {
 									<div className="right-area">
 										<h5>cj.ugwuanyi@gmail.com</h5>
 										<h6>Reply in 24 hours</h6>
-									</div>{/* right-area */}
-								</div>{/* info */}
-							</div>{/* col-sm-4 */}
-						</div>{/* row */}
-					</div>{/* heading-wrapper */}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					
 					<a className="downlad-btn" href="assets/Resume.docx" download="Chijioke's CV">Download CV</a>
-				</div>{/* container */}
+				</div>
 			</header>
 			
 			<section className="intro-section">
@@ -60,20 +60,19 @@ function StatikCompoonent(argument) {
 								<ul className="information margin-tb-30">
 									<li><b>BORN : </b>June 30, 1996</li>
 									<li><b>EMAIL : </b>cj.ugwuanyi@gmail.com</li>
-									<li><b>MARITAL STATUS : </b>Single</li>
+									{/*<li><b>MARITAL STATUS : </b>Single</li>*/}
 								</ul>
 								<ul className="social-icons">
-									<li><a href="#"><i className="ion-social-pinterest"></i></a></li>
-									<li><a href="#"><i className="ion-social-linkedin"></i></a></li>
-									<li><a href="#"><i className="ion-social-instagram"></i></a></li>
-									<li><a href="#"><i className="ion-social-facebook"></i></a></li>
-									<li><a href="#"><i className="ion-social-twitter"></i></a></li>
+									<li><a href="https://github.com/xplorer1"><i className="ion-social-github"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/chijioke-u-7b267397/"><i className="ion-social-linkedin"></i></a></li>
+									{/*<li><a href="#"><i className="ion-social-facebook"></i></a></li>*/}
+									<li><a href="https://twitter.com/cj_ugwuanyi"><i className="ion-social-twitter"></i></a></li>
 								</ul>
-							</div>{/* intro */}
-						</div>{/* col-sm-8 */}
-					</div>{/* row */}
-				</div>{/* container */}
-			</section>{/* intro-section */}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			
 			<section className="portfolio-section section">
 				<div className="container">
@@ -98,37 +97,37 @@ function StatikCompoonent(argument) {
 				<div className="portfolioContainer">
 					
 					<div className="p-item web-design">
-						<a href="assets/img/jbmain.png" data-fluidbox>
+						<a target="_blank" href="https://quizzical-visvesvaraya-c56497.netlify.com" data-fluidbox>
 							<img src="assets/img/jbmain.png" alt="" />
 						</a>
 					</div>
 					
 					<div className="p-item branding graphic-design">
-						<a href="assets/img/pfmain.png" data-fluidbox>
+						<a target="_blank" href="https://relaxed-murdock-90413b.netlify.com/" data-fluidbox>
 							<img src="assets/img/pfmain.png" alt="" />
 						</a>
 					</div>
 					
 					<div className="p-item web-design">
-						<a href="assets/img/cvmain.png" data-fluidbox>
+						<a target="_blank" href="https://reverent-bose-2e43d4.netlify.com" data-fluidbox>
 							<img src="assets/img/cvmain.png" alt="" />
 						</a>
 					</div>
 
 					<div className="p-item graphic-design web-design">
-						<a className="img" href="assets/img/ctmain.png" data-fluidbox>
+						<a target="_blank" className="img" href="https://corporatetransit.ng" data-fluidbox>
 							<img src="assets/img/ctmain.png" alt="" />
 						</a>
 					</div>
 					
 					<div className="p-item branding graphic-design">
-						<a href="assets/img/spmain.png" data-fluidbox>
+						<a target="_blank" href="https://elegant-fermi-7d31a8.netlify.com" data-fluidbox>
 							<img src="assets/img/spmain.png" alt="" /></a>
 					</div>
 					
 					<div className="p-item graphic-design web-design">
-						<a className="img" href="assets/img/ehmain.png" data-fluidbox>
-							<img src="assets/img/ehmain.png" alt="" />
+						<a target="_blank" className="img" href="https://reverent-franklin-8b7437.netlify.com" data-fluidbox>
+							<img src="assets/img/devjobs.png" alt="" />
 						</a>
 					</div>
 					
@@ -164,61 +163,88 @@ function StatikCompoonent(argument) {
 						</div>
 
 						<div className="col-sm-8">
-							<p className="margin-b-50" style={{color: "black"}}>Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque 
-							sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Nulla maximus pellentes que velit, quis consequat nulla effi citur at. 
-							Maecenas sed massa tristique.Duis non volutpat arcu, eu mollis tellus. 
-							Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet, 
-							consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur 
-							adipiscing elit. Nulla maximus pellentes que velit, quis consequat nulla 
-							effi citur at.Maecenas sed massa tristique.</p>
+							<p className="margin-b-50" style={{color: "black"}}>
+								I am a Nigerian based full-stack developer with a huge flare for solving problems using technology.
+								<br />
+								I am very adventurous and work with very little supervision. Learning new things everyday is my forte.
+							</p>
 							
 							<div className="row">
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
-										<Progress type="circle" percent={90} status="success" />
-										<div className="radial-progress" data-prog-percent=".97">
+										<Progress type="circle" percent={95} status="success" />
+										<div className="radial-progress" data-prog-percent=".95">
 											<div></div>
 											<h6 className="progress-title">HTML5 & CSS3</h6>
 										</div>
 									</div>{/* radial-prog-area*/}
-								</div>{/* col-sm-6*/}
+								</div>
 							
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
 									<Progress type="circle" percent={70} status="success" />
-										<div className="radial-progress" data-prog-percent=".78">
+										<div className="radial-progress" data-prog-percent=".70">
 											<div></div>
 											<h6 className="progress-title">ReactJs</h6>
 										</div>
 									</div>{/* radial-prog-area*/}
-								</div>{/* col-sm-6*/}
+								</div>
 								
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
 									<Progress type="circle" percent={70} status="success" />
-										<div className="radial-progress" data-prog-percent=".67">
+										<div className="radial-progress" data-prog-percent=".70">
 											<div></div>
 											<h6 className="progress-title">NodeJs</h6>
 										</div>
 									</div>{/* radial-prog-area*/}
-								</div>{/* col-sm-6*/}
+								</div>
 								
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-50">
-									<Progress type="circle" percent={50} status="success" />
-										<div className="radial-progress" data-prog-percent=".97">
+									<Progress type="circle" percent={30} status="success" />
+										<div className="radial-progress" data-prog-percent=".30">
 											<div></div>
-											<h6 className="progress-title">PHP</h6>
+											<h6 className="progress-title">Java</h6>
 										</div>
 									</div>{/* radial-prog-area*/}
-								</div>{/* col-sm-6*/}
+								</div>
+
+								<div className="col-sm-6 col-md-6 col-lg-3 pt-4">
+									<div className="radial-prog-area margin-b-50">
+									<Progress type="circle" percent={80} status="success" />
+										<div className="radial-progress" data-prog-percent=".80">
+											<div></div>
+											<h6 className="progress-title">Research</h6>
+										</div>
+									</div>
+								</div>
+
+								<div className="col-sm-6 col-md-6 col-lg-3 pt-4">
+									<div className="radial-prog-area margin-b-50">
+									<Progress type="circle" percent={60} status="success" />
+										<div className="radial-progress" data-prog-percent=".60">
+											<div></div>
+											<h6 className="progress-title">People Management</h6>
+										</div>
+									</div>
+								</div>
+
+								<div className="col-sm-6 col-md-6 col-lg-3 pt-4">
+									<div className="radial-prog-area margin-b-50">
+									<Progress type="circle" percent={70} status="success" />
+										<div className="radial-progress" data-prog-percent=".70">
+											<div></div>
+											<h6 className="progress-title">Communication</h6>
+										</div>
+									</div>
+								</div>
 							
-							</div>{/* row */}
-						</div>{/* col-sm-8 */}
-					</div>{/* row */}
-				</div>{/* container */}
-			</section>{/* about-section */}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			
 			<section className="experience-section section">
 				<div className="container">
@@ -232,87 +258,42 @@ function StatikCompoonent(argument) {
 						<div className="col-sm-8">
 						
 							<div className="experience margin-b-50">
-								<h4><b>JUNIOR PROJECT MANAGER</b></h4>
-								<h5 className="font-yellow"><b>DESIGN STUDIO</b></h5>
-								<h6 className="margin-t-10">MARCH 2015 - PRESENT</h6>
-								<p className="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-									quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-									eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+								<h4><b>Andela Community Mentor</b></h4>
+								<h5 className="font-yellow"><b>Andela Learning Community</b></h5>
+								<h6 className="margin-t-10">2016 - 2018</h6>
+								<p className="font-semi-white margin-tb-30">I was a community mentor during Andela Learning Community 2.0 and 3.0<br />
+								I was tasked with helping beginner programmers start off with learning programming. Reviewing and correcting their code was the major task.</p>
 								<ul className="list margin-b-30">
-									<li>Duis non volutpat arcu, eu mollis tellus.</li>
-									<li>Quis consequat nulla effi citur at.</li>
-									<li>Sed finibus aliquam neque sit.</li>
+									<li>I learnt people management and leadership tips mostly given the fact that most of the learners were much older than I was.</li>
+									<li>Several concepts which weren't clear to me when I started programming became much more understandable.</li>
 								</ul>
 							</div>{/* experience */}
 							
 							<div className="experience margin-b-50">
-								<h4><b>WEB MASTER/WEB DEVELOPER</b></h4>
-								<h5 className="font-yellow"><b>DESIGN & WEB STUDIO</b></h5>
-								<h6 className="margin-t-10">APRIL 2014 - FEBRUARY 2015</h6>
-								<p className="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-									quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-									eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+								<h4><b>Developer Intern</b></h4>
+								<h5 className="font-yellow"><b>Adbasador Media Limited</b></h5>
+								<h6 className="margin-t-10">APRIL 2018 - November 2018</h6>
+								<p className="font-semi-white margin-tb-30">I was an intern at Adbasador Media Limited for a period of 7 months.</p>
 								<ul className="list margin-b-30">
-									<li>Duis non volutpat arcu, eu mollis tellus.</li>
-									<li>Quis consequat nulla effi citur at.</li>
-									<li>Sed finibus aliquam neque sit.</li>
+									<li>I built up one of their large scale business products from the ground up.</li>
 								</ul>
-							</div>{/* experience */}
-							
-						</div>{/* col-sm-8 */}
-					</div>{/* row */}
-				</div>{/* container */}
-				
-			</section>{/* experience-section */}
-			
-			<section className="education-section section">
-				<div className="container">
-					<div className="row">
-						<div className="col-sm-4">
-							<div className="heading">
-								<h3><b>Education</b></h3>
-								<h6 className="font-lite-black"><b>ACADEMIC CAREER</b></h6>
 							</div>
-						</div>{/* col-sm-4 */}
-						<div className="col-sm-8">
-							<div className="education-wrapper">
-								<div className="education margin-b-50">
-									<h4><b>MASTER DEGREE IN SCIENCE</b></h4>
-									<h5 className="font-yellow"><b>UCLA - SCIENCE AND ENGINEERING</b></h5>
-									<h6 className="font-lite-black margin-t-10">GRADUATED IN MAY 2010(2 YEARS)</h6>
-									<p className="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-									quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-									eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-								</div>{/* education */}
-								
-								<div className="education margin-b-50">
-									<h4><b>COURSE ON COMPUTER SCIENCE</b></h4>
-									<h5 className="font-yellow"><b>NEW YORK PUBLIC UNIVERSITY</b></h5>
-									<h6 className="font-lite-black margin-t-10">GRADUATED IN MAY 2009(6 MONTHS)</h6>
-									<p className="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-									quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-									eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-								</div>{/* education */}
-								
-								<div className="education margin-b-50">
-									<h4><b>GRADUATED VALEDICTERIAN</b></h4>
-									<h5 className="font-yellow"><b>PUBLIC COLLEGE</b></h5>
-									<h6 className="font-lite-black margin-t-10">GRADUATED IN MAY 2008(4 YEARS)</h6>
-									<p className="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-									quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-									eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-								</div>{/* education */}
-							</div>{/* education-wrapper */}
-						</div>{/* col-sm-8 */}
-					</div>{/* row */}
-				</div>{/* container */}
+
+							<div className="experience margin-b-50">
+								<h4><b>Full-Stack Developer | Remote</b></h4>
+								<h5 className="font-yellow"><b>Adbasador Media Limited | Corporate Transit Limited</b></h5>
+								<h6 className="margin-t-10"> January 2019 - Present </h6>
+								<p className="font-semi-white margin-tb-30">I took on freelance and remote jobs with various organizations, notably Adbasador and Corporate Transit. </p>
+								<ul className="list margin-b-30">
+									<li>I built up their large scale business products from the ground up.</li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
 				
-			</section>{/* about-section */}
+			</section>
 			
 			<section className="counter-section" id="counter">
 				<div className="container">
@@ -320,32 +301,24 @@ function StatikCompoonent(argument) {
 					
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="400" data-count="3">3</span></b></h1>
+								<h1 className="title"><b><span className="counter-value" data-duration="400" data-count="2">2</span></b></h1>
 								<h5 className="desc"><b>Coder Certificates</b></h5>
 							</div>{/* counter */}
 						</div>{/* col-md-3*/}
 						
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="1400" data-count="25">16</span></b></h1>
+								<h1 className="title"><b><span className="counter-value" data-duration="1400" data-count="12">12</span></b></h1>
 								<h5 className="desc"><b>Projects Completed</b></h5>
 							</div>{/* counter */}
 						</div>{/* col-md-3*/}
 						
 						<div className="col-sm-6 col-md-6 col-lg-3">
 							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="700" data-count="311">5</span></b></h1>
+								<h1 className="title"><b><span className="counter-value" data-duration="700" data-count="5">5</span></b></h1>
 								<h5 className="desc"><b>Satisfied Clients</b></h5>
 							</div>{/* counter */}
 						</div>{/* col-md-3*/}
-						
-						<div className="col-sm-6 col-md-6 col-lg-3">
-							<div className="counter margin-b-30">
-								<h1 className="title"><b><span className="counter-value" data-duration="2000" data-count="732">13</span></b></h1>
-								<h5 className="desc"><b>Finished Projects</b></h5>
-							</div>
-						</div>
-						
 					</div>
 				</div>
 		    </section>
@@ -356,14 +329,8 @@ function StatikCompoonent(argument) {
 				</p>
 			</footer>
 		</article>
-	)
-}
-class Home extends React.Component {
-	render() {
-		return (
-			<StatikCompoonent />
 		)
 	}
 }
 
-export {Home, StatikCompoonent};
+export default Home;
