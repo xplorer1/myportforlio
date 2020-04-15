@@ -43,7 +43,7 @@ class Home extends React.Component {
 						</div>
 					</div>
 					
-					<a className="downlad-btn" href="/assets/mycv.docx" download="Chijioke's CV">Download CV</a>
+					<a className="downlad-btn" href="/assets/mycvpdf.pdf" download="Chijioke's CV">Download CV</a>
 				</div>
 			</header>
 			
@@ -131,12 +131,12 @@ class Home extends React.Component {
 						</a>
 					</div>
 					
-					{/*<div className="p-item  graphic-design branding">
-						<a href="assets/images/portfolio-5-600x800.jpg" data-fluidbox>
-							<img src="assets/images/portfolio-5-600x800.jpg" alt="" /></a>
+					<div className="p-item graphic-design branding">
+						<a target="_blank" href="https://thebookbunker.herokuapp.com" data-fluidbox>
+							<img src="assets/img/bookbunker.png" alt="" /></a>
 					</div>
 						
-					<div className="p-item web-design branding">
+					{/*<div className="p-item web-design branding">
 						<a href="assets/images/portfolio-6-600x800.jpg" data-fluidbox>
 							<img src="assets/images/portfolio-6-600x800.jpg" alt="" /></a>
 					</div>
@@ -192,7 +192,7 @@ class Home extends React.Component {
 								
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-30">
-									<Progress type="circle" percent={70} status="success" />
+									<Progress type="circle" percent={78} status="success" />
 										<div className="radial-progress" data-prog-percent=".70">
 											<div></div>
 											<h6 className="progress-title">NodeJs</h6>
@@ -202,7 +202,7 @@ class Home extends React.Component {
 								
 								<div className="col-sm-6 col-md-6 col-lg-3">
 									<div className="radial-prog-area margin-b-50">
-									<Progress type="circle" percent={30} status="success" />
+									<Progress type="circle" percent={60} status="success" />
 										<div className="radial-progress" data-prog-percent=".30">
 											<div></div>
 											<h6 className="progress-title">Java</h6>
